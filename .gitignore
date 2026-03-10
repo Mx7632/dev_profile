@@ -1,0 +1,124 @@
+# ====== Python ======
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Python 虚拟环境
+venv/
+env/
+ENV/
+.venv
+
+# IDE - PyCharm
+.idea/
+
+# ====== 编辑器 ======
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.*.elc
+
+# ====== 操作系统 ======
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+@eaDir/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# ====== 日志文件 ======
+*.log
+logs/
+
+# ====== 临时文件 ======
+*.tmp
+*.bak
+*.swp
+
+# ====== 构建产物 ======
+dist/
+build/
+*.egg-info/
+
+# ====== 环境变量 ======
+.env
+.env.local
+.env.production
+
+# ====== 数据库 ======
+*.db
+*.sqlite
+*.sqlite3
+
+# ====== 上传文件 ======
+uploads/
+downloads/
+
+# ====== 压缩包 ======
+*.zip
+*.tar.gz
+*.rar
+
+# ====== 证书密钥 ======
+*.pem
+*.key
+*.crt
+*.cer
+
+# ====== Qoder 配置 (可选) ======
+# 如果您想共享 Qoder 配置，可以注释掉这些行
+.qoder/agents/
+.qoder/skills/
+
+# 部署
+.github
+deploy/
+history/
+
+# ====== 其他 ======
+# Node.js (如果以后需要)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ruby (如果以后需要)
+*.rbx
+Gemfile.lock
+
+# ====== 保留重要文件 ======
+# 以下文件应该被 Git 跟踪
+!.gitignore
+!README*.md
+!profile.md
+!index.html
+
