@@ -13,7 +13,7 @@
 
 ## 2. 联系方式 (Contact)
 
-- **Email:** 1790405816@qq.com
+- **Email:** limx7632@gmail.com
 - **GitHub:** https://github.com/Mx7632
 - **Blog:** https://blog.limxbyte.sbs
 
