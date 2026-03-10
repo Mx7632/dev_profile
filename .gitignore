@@ -103,7 +103,6 @@ downloads/
 # 部署
 .github
 deploy/
-history/
 
 # ====== 其他 ======
 # Node.js (如果以后需要)

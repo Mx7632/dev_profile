@@ -5,10 +5,11 @@
 
 import { defineStore } from 'pinia'
 import type { ProfileData } from '@/types/profile'
+import profileData from '@/data/profile.json'
 
 export const useProfileStore = defineStore('profile', {
   state: (): { profile: ProfileData | null } => ({
-   profile: null,
+   profile: profileData as ProfileData,
   }),
 
   getters: {
