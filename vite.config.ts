@@ -23,17 +23,18 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
-    open: true,
+    host: '0.0.0.0', // 允许外部访问
+  port:3001,      // 指定端口
+    open: false,     // 不自动打开浏览器
   },
   build: {
     outDir: 'dist',
     assetsDir: 'static',
     sourcemap: false,
-    minify: 'terser',
+   minify: 'terser',
     rollupOptions: {
       output: {
-        manualChunks: {
+       manualChunks: {
           'vendor-vue': ['vue', 'vue-router', 'pinia'],
           'vendor-utils': ['axios', '@vueuse/core'],
         },
