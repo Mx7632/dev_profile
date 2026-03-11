@@ -75,7 +75,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 import { useProfileStore } from '@/stores/profile'
 
 const profileStore = useProfileStore()
