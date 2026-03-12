@@ -30,9 +30,9 @@ if ! command -v serve &> /dev/null; then
 fi
 echo "✅ serve 已安装"
 
-# 4. 安装依赖
+# 4. 安装依赖（包含开发依赖，保证可以运行构建工具）
 echo "📦 安装项目依赖..."
-npm install --production
+npm install
 
 # 5. 构建项目
 echo "🔨 构建项目..."
@@ -51,7 +51,7 @@ pm2 delete dev-profile-ai 2>/dev/null || true
 
 # 7. 启动新应用
 echo "🚀 启动应用..."
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 
 # 8. 保存 PM2 配置
 echo "💾 保存 PM2 配置..."
