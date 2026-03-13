@@ -61,11 +61,19 @@ pm2 save
 echo "📊 应用状态:"
 pm2 status
 
-# 10. 获取服务器 IP
+# 10. 输出访问地址（优先公网 IP）
 echo ""
 echo "🌐 访问地址:"
-IP=$(hostname -I | awk '{print $1}')
-echo "   http://$IP:3001"
+PUBLIC_IP=""
+if command -v curl &> /dev/null; then
+  PUBLIC_IP=$(curl -fsS --max-time 5 https://api.ipify.org 2>/dev/null || true)
+fi
+if [ -n "$PUBLIC_IP" ]; then
+  echo "   http://$PUBLIC_IP:3001"
+else
+  IP=$(hostname -I | awk '{print $1}')
+  echo "   http://$IP:3001"
+fi
 echo "   http://localhost:3001"
 echo ""
 echo "🎉 部署完成！"
